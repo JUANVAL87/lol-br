@@ -3,27 +3,28 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2jjy6pxawyl7"
-path="res://.godot/imported/Lava-Cracked Ground.png-3584bb846451409268d3c111ecc31def.ctex"
+path.bptc="res://.godot/imported/Lava-Cracked Ground.png-3584bb846451409268d3c111ecc31def.bptc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://demo/assets/textures/Lava-Cracked Ground.png"
-dest_files=["res://.godot/imported/Lava-Cracked Ground.png-3584bb846451409268d3c111ecc31def.ctex"]
+dest_files=["res://.godot/imported/Lava-Cracked Ground.png-3584bb846451409268d3c111ecc31def.bptc.ctex"]
 
 [params]
 
-compress/mode=0
-compress/high_quality=false
+compress/mode=2
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=false
+mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
