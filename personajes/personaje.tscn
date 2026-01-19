@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://m7r3xhkvj8ie"]
+
+[ext_resource type="Script" uid="uid://1mgovdojlq7i" path="res://personajes/movimiento.gd" id="1_7uyon"]
+[ext_resource type="PackedScene" uid="uid://bt5t2n4oe81w0" path="res://personajes/Persnaje1.tscn" id="3_woa1f"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7uyon"]
+radius = 0.4
+height = 1.75
+
+[node name="Personaje" type="Node3D"]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+script = ExtResource("1_7uyon")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.81, 0)
+shape = SubResource("CapsuleShape3D_7uyon")
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.36853024, 0.9296158, 0, -0.9296158, 0.36853024, 0.1042254, 16.39301, 6.4150763)
+
+[node name="skin" parent="CharacterBody3D" instance=ExtResource("3_woa1f")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)

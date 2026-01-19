@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2ccuhcnfg7qh"]
+
+[ext_resource type="PackedScene" uid="uid://m7r3xhkvj8ie" path="res://personajes/personaje.tscn" id="2_1m2o7"]
+[ext_resource type="Script" uid="uid://dylsjlowkg47l" path="res://scripts/spawns.gd" id="3_1m2o7"]
+[ext_resource type="PackedScene" uid="uid://ckgkxq2o3sypp" path="res://escenas/mapa/mapa.tscn" id="3_giccq"]
+
+[node name="gameplay" type="Node3D"]
+script = ExtResource("3_1m2o7")
+
+[node name="Personaje" parent="." instance=ExtResource("2_1m2o7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 137.06834, -0.0034510791, 107.51521)
+
+[node name="spawns" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 137.06834, 0, 107.51521)
+
+[node name="Marker3D" type="Marker3D" parent="spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.696396, 0.31407332, -78.756805)
+
+[node name="Marker3D2" type="Marker3D" parent="spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.773865, 0.2250483, 46.380157)
+
+[node name="Marker3D3" type="Marker3D" parent="spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.771835, 0.2111919, 102.35535)
+
+[node name="Marker3D4" type="Marker3D" parent="spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.496742, 0.098222315, 14.45549)
+
+[node name="Marker3D5" type="Marker3D" parent="spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -81.75062, 0.30764675, -24.812553)
+
+[node name="mapa" parent="." instance=ExtResource("3_giccq")]

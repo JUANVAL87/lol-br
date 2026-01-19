@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=3 uid="uid://cy2x5anqjhagi"]
+
+[ext_resource type="PackedScene" uid="uid://6ov5vpmqny1d" path="res://deco/nature/DeadTree_2.gltf" id="1_2dlwu"]
+[ext_resource type="Script" path="res://scripts/arbol_muerto.gd" id="2_hb7r6"]
+[ext_resource type="Texture2D" uid="uid://c307hdmos4gtm" path="res://demo/assets/textures/rock023_nrm_rgh.png" id="2_yyna6"]
+[ext_resource type="Texture2D" uid="uid://c1ots7w6i0i1q" path="res://demo/assets/textures/ground037_nrm_rgh.png" id="3_hb7r6"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_nivct"]
+height = 2.9082031
+radius = 0.44628906
+
+[node name="arbol_muerto1" instance=ExtResource("1_2dlwu")]
+script = ExtResource("2_hb7r6")
+
+[node name="DeadTree_2" parent="." index="0"]
+layers = 3
+
+[node name="Decal" type="Decal" parent="DeadTree_2" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3268983, 0)
+size = Vector3(2, 0.5489502, 2)
+texture_albedo = ExtResource("2_yyna6")
+upper_fade = 2.756869
+lower_fade = 0.00011101446
+cull_mask = 2
+
+[node name="Decal2" type="Decal" parent="DeadTree_2" index="1"]
+transform = Transform3D(1, 0, 0, 0, 0.90464854, -0.4261583, 0, 0.4261583, 0.90464854, 0.6655203, 4.7085614, 0.14526367)
+size = Vector3(0.32763672, 1.1899414, 1.7094727)
+texture_albedo = ExtResource("3_hb7r6")
+upper_fade = 4.4785657
+lower_fade = 5.1445045
+
+[node name="Decal4" type="Decal" parent="DeadTree_2" index="2"]
+transform = Transform3D(1, 0, 0, 0, 0.90464854, -0.4261583, 0, 0.4261583, 0.90464854, 0.6655203, 10.131293, 0.16550201)
+size = Vector3(0.32763672, 1.1899414, 1.7094727)
+texture_albedo = ExtResource("3_hb7r6")
+upper_fade = 4.4785657
+lower_fade = 5.1445045
+
+[node name="Decal3" type="Decal" parent="DeadTree_2" index="3"]
+transform = Transform3D(1, 0, 0, 0, 0.90464854, -0.4261583, 0, 0.4261583, 0.90464854, 0.12827408, 7.6540265, 0.8113017)
+size = Vector3(0.32763672, 1.1899414, 1.7094727)
+texture_albedo = ExtResource("3_hb7r6")
+upper_fade = 4.4785657
+lower_fade = 5.1445045
+
+[node name="StaticBody3D" type="StaticBody3D" parent="DeadTree_2" index="4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeadTree_2/StaticBody3D" index="0"]
+transform = Transform3D(0.9949212, 0.10065692, 0, -0.10065692, 0.9949212, 0, 0, 0, 1, 0.23626328, 1.1133764, 0.088992834)
+shape = SubResource("CylinderShape3D_nivct")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="DeadTree_2/StaticBody3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47331583, 4.4696226, 0)
+shape = SubResource("CylinderShape3D_nivct")
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="DeadTree_2" index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68013537, 9.376282, 0.2008512)
+light_color = Color(0.44776732, 0.002284863, 0.7523736, 1)
+light_energy = 1.283
+omni_range = 6.648
+omni_attenuation = -0.974
