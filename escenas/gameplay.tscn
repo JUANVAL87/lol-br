@@ -16,8 +16,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 137.06834, 0, 107.51521)
 [node name="Marker3D" type="Marker3D" parent="spawns"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.696396, 0.31407332, -78.756805)
 
+[node name="Marker3D6" type="Marker3D" parent="spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.36658, 0.31407332, -32.13549)
+
+[node name="Marker3D7" type="Marker3D" parent="spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.482956, 0.31407332, -11.342888)
+
+[node name="Marker3D8" type="Marker3D" parent="spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.848999, 0.31407332, -65.859886)
+
 [node name="Marker3D2" type="Marker3D" parent="spawns"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.773865, 0.2250483, 46.380157)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.092865, 0.2250483, 104.90239)
 
 [node name="Marker3D3" type="Marker3D" parent="spawns"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.771835, 0.2111919, 102.35535)
@@ -27,5 +36,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.496742, 0.098222315, 14.4
 
 [node name="Marker3D5" type="Marker3D" parent="spawns"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -81.75062, 0.30764675, -24.812553)
+
+[node name="Marker3D9" type="Marker3D" parent="spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.121002, 0.30764675, -24.812553)
+
+[node name="Marker3D10" type="Marker3D" parent="spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.121002, 0.30764675, 44.532547)
+
+[node name="Marker3D11" type="Marker3D" parent="spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.83615, 0.30764675, 103.4729)
 
 [node name="mapa" parent="." instance=ExtResource("3_giccq")]

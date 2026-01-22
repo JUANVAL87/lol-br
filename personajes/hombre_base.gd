@@ -14,11 +14,11 @@ func _ready():
 
 
 func _physics_process(delta):
+	super(delta)
 	# 1. SI ESTÁ EN DASH, EL MOVIMIENTO ES AUTOMÁTICO Y SE SALTA EL RESTO
 	if is_dashing:
 		move_and_slide()
 		return 
-	super(delta)
 
 func ejecutar_dash():
 	var mouse_world = get_mouse_world_position()

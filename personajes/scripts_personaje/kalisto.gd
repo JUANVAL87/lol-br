@@ -15,6 +15,7 @@ func _ready():
 	velocidad_giro = 12.0
 
 func _physics_process(delta):
+	super(delta)
 	# 1. Prioridad: Dash
 	if is_dashing:
 		move_and_slide()
@@ -26,7 +27,6 @@ func _physics_process(delta):
 		return
 
 	# 3. Activar lógica del padre
-	super(delta)
 
 # Implementación específica de animaciones para Kalisto
 func actualizar_animaciones():
